@@ -13,5 +13,7 @@
             "email": "seb@gmail.fr"
         }
     ],
-    "require": {}
+    "require": {
+        "cocur/slugify": "^4.5"
+    }
 }
