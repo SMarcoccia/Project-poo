@@ -1,0 +1,17 @@
+{
+    "name": "seb/1composer",
+    "description": "test composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SMARCOCCIA",
+            "email": "seb@gmail.fr"
+        }
+    ],
+    "require": {}
+}
