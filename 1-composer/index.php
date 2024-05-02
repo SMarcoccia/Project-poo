@@ -6,6 +6,7 @@
     
     //require("src/classes/Member.php");
     $member = new Member("John", "Doe");
+    dump($member);
 ?>
 
 <!DOCTYPE html>
@@ -35,5 +36,17 @@
         $slugify = new Slugify();
         echo $slugify->slugify($member->getFirstName() . ' ' . $member->getLastName() . ' ' . $member->getDate()->format('Y-m-d H:i:s')); 
     ?>
+
+    <h2>Test de Faker</h2>
+    <ul>
+    <?php
+    // use the factory to create a Faker\Generator instance
+    $faker = Faker\Factory::create();
+    for ($i = 0; $i < 20; $i++) {
+        echo '<li>' . $faker->name() . ' : ' . $faker->email() . ' / ' . $faker->phoneNumber() . '</li>';
+    }
+    ?>
+    </ul>
+
 </body>
 </html>
