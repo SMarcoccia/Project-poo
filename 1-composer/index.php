@@ -6,7 +6,6 @@
     
     //require("src/classes/Member.php");
     $member = new Member("John", "Doe");
-    dump($member);
 ?>
 
 <!DOCTYPE html>
