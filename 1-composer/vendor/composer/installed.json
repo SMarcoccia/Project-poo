@@ -1,14 +1,9 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "c0757536155cfbd8eae51035f370d774",
     "packages": [
         {
             "name": "cocur/slugify",
             "version": "v4.5.1",
+            "version_normalized": "4.5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cocur/slugify.git",
@@ -48,7 +43,9 @@
                 "zendframework/zend-servicemanager": "~2.2",
                 "zendframework/zend-view": "~2.2"
             },
+            "time": "2023-09-17T07:26:20+00:00",
             "type": "library",
+            "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Cocur\\Slugify\\": "src"
@@ -78,13 +75,12 @@
                 "issues": "https://github.com/cocur/slugify/issues",
                 "source": "https://github.com/cocur/slugify/tree/v4.5.1"
             },
-            "time": "2023-09-17T07:26:20+00:00"
-        }
-    ],
-    "packages-dev": [
+            "install-path": "../cocur/slugify"
+        },
         {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.29.0",
+            "version_normalized": "1.29.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -105,6 +101,7 @@
             "suggest": {
                 "ext-mbstring": "For best performance"
             },
+            "time": "2024-01-29T20:11:03+00:00",
             "type": "library",
             "extra": {
                 "thanks": {
@@ -112,6 +109,7 @@
                     "url": "https://github.com/symfony/polyfill"
                 }
             },
+            "installation-source": "dist",
             "autoload": {
                 "files": [
                     "bootstrap.php"
@@ -160,11 +158,12 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-29T20:11:03+00:00"
+            "install-path": "../symfony/polyfill-mbstring"
         },
         {
             "name": "symfony/var-dumper",
             "version": "v7.0.7",
+            "version_normalized": "7.0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
@@ -191,10 +190,12 @@
                 "symfony/uid": "^6.4|^7.0",
                 "twig/twig": "^3.0.4"
             },
+            "time": "2024-04-18T09:29:19+00:00",
             "bin": [
                 "Resources/bin/var-dump-server"
             ],
             "type": "library",
+            "installation-source": "dist",
             "autoload": {
                 "files": [
                     "Resources/functions/dump.php"
@@ -243,15 +244,12 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-18T09:29:19+00:00"
+            "install-path": "../symfony/var-dumper"
         }
     ],
-    "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "dev": true,
+    "dev-package-names": [
+        "symfony/polyfill-mbstring",
+        "symfony/var-dumper"
+    ]
 }
